@@ -6,6 +6,9 @@ There are multiple risk factors that could contribute to CVD, such as unhealthy 
   
   The dataset includes relevant information for each patient, such as their personal information and some medical data, including whether or not they have had heart disease before. The pic below shows categorical info, and the dataset can be accessed from Kaggle here: https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
 
+![info](https://github.com/user-attachments/assets/70885e2b-0e65-4e62-913f-938c78378659)
+
+![describe](https://github.com/user-attachments/assets/c78ab290-31fe-4e94-b3a4-d1bdcd94d8e8)
 
 
   After doing inital cleaning and EDA using graphs and other methods, the following observations can be made:
@@ -15,16 +18,16 @@ It also appears that Cholesterol has no correlation with heart disease, which is
   
   Looking at the data, it appears there are a number of rows in the "Cholesterol" and "RestingBP" categories with 0 values. This is likely due to error, and I have decided to remove these rows as opposed to other methods, such as assigning the 0 values a median category score.
 
-![box_plot](https://github.com/user-attachments/assets/01e63ff5-e22d-4dae-a9b2-05d976058446)
+![box_plots](https://github.com/user-attachments/assets/c774b02a-5d6f-4a19-83b7-55b7d5c96d2e)
 
+![histplot](https://github.com/user-attachments/assets/698e01cd-bafe-4dcc-98fc-955778c40024)
 
-![scatterplot](https://github.com/user-attachments/assets/8b53dbfb-f833-4121-88ab-49155f2460e7)
 
   In order to prepare the data for regression analysis, dummy variables need to be created for the categorical variables. This allows for further analysis based on correlations between the dependent variable and other variables. In looking at the heatmap and other metrics, a coefficient threshold of 0.3 was chosen. Next in the process is to separate the dependent and independent variables, and to split the model into test and training sets. Once complete, I will set the parameters and run the logistic regression and fit the model.
   
   Now that the model has been created and fit, the dependent variable needs to be predicted based on the results. To view the predictive results, I create a Confusion Matrix. This matrix displays accuracy information about the model, to compare expected results with actual results. From the matrix shown below, you can see the model had 69 True Positives vs 13 False Positives. Additionally, 85 True Negatives vs 17 False Negatives. To add insight to the Confusion Matrix, I produced a classification report. The table below shows the accuracy scores from the model. The f1 score is a good indicator of model performance. Although the model has an accuracy of over 80%, the results indicate that the model is a better predictor of whether a person does not have heart disease than if they do. 
 
-![scores](https://github.com/user-attachments/assets/a84059df-a7ed-46c5-b1dd-341ab408d4a2)
+
 
 ![confusion_matrix](https://github.com/user-attachments/assets/d3980272-43a3-4d75-a19c-3679a02268d6)
 
