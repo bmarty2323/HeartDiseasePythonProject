@@ -27,6 +27,7 @@ It also appears that Cholesterol has no correlation with heart disease, which is
   
   Now that the model has been created and fit, the dependent variable needs to be predicted based on the results. To view the predictive results, I create a Confusion Matrix. This matrix displays accuracy information about the model, to compare expected results with actual results. From the matrix shown below, you can see the model had 69 True Positives vs 13 False Positives. Additionally, 85 True Negatives vs 17 False Negatives. To add insight to the Confusion Matrix, I produced a classification report. The table below shows the accuracy scores from the model. The f1 score is a good indicator of model performance. Although the model has an accuracy of over 80%, the results indicate that the model is a better predictor of whether a person does not have heart disease than if they do. 
 
+![scores1](https://github.com/user-attachments/assets/a6b58753-51ff-4b68-bd40-a1a2d421d036)
 
 
 ![confusion_matrix](https://github.com/user-attachments/assets/d3980272-43a3-4d75-a19c-3679a02268d6)
@@ -35,7 +36,7 @@ In addition to logistic regression, I built a decision tree based model to bette
 
 ![decision_tree](https://github.com/user-attachments/assets/3270dc9a-3dff-4ca6-9365-96bef90adbdf)
 
-
+To conclude, while the model did perform well, with an 84% accuracy score, I believe improvements can be made. Perhaps a better score would be attained were other variables added, such as "ChestPainType_ATA", or "ST_SlopeDown". Although there were a higher number of males with heart disease compared to females, I purposely left this variable out of my model. Surely, the performance scores would be higher had I included gender. Though the models can be improved upon, they did appear to be good predictors of both those patients with heart disease, and those without.
 
 
 
